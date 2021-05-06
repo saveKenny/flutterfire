@@ -74,8 +74,8 @@ method on your [`FirebaseRemoteConfig`](!firebase_remote_config.FirebaseRemoteCo
 
 ```dart
 await remoteConfig.setConfigSettings(RemoteConfigSettings(
-  fetchTimeout: Duration(seconds: 10),
-  minimumFetchInterval: Duration(hours: 1),
+  fetchTimeoutMillis: Duration(seconds: 10).inMilliseconds,
+  minimumFetchIntervalMillis: Duration(hours: 1).inMilliseconds,
 ));
 ```
 
